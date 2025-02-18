@@ -27,5 +27,12 @@ html(lang="ru")
 		link(rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png")
 		link(rel="stylesheet" href="styles/main.css")
 	body
-		block content
+		.wrapper
+			.content
+				block header
+					include ../blocks/header/header
+				main
+					block content
+			block footer
+				include ../blocks/footer/footer
 		block scripts

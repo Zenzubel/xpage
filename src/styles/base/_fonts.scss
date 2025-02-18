@@ -1,0 +1,18 @@
+@mixin font($f-name, $f-style, $f-weight, $f-url) {
+	@font-face {
+	  font-family: $f-name;
+	  font-style:  $f-style;
+	  font-weight: $f-weight;
+	  src: url('../fonts/#{$f-url}.woff2') format('woff2'),
+	  url('../../fonts/#{$f-url}.woff') format('woff')
+	//   url('../../fonts/#{$f-url}.ttf') format('truetype'),
+	//   url('../../fonts/#{$f-url}.eot'),
+	//   url('../../fonts/#{$f-url}.eot?#iefix') format('embedded-opentype');
+	}
+  }
+
+  @include font('Commissioner', normal, 400, 'Commissioner/Commissioner-Regular');
+  @include font('Commissioner', normal, 700, 'Commissioner/Commissioner-Bold');
+  @include font('DrukWideCyr', normal, 700, 'Commissioner/DrukWideCyr-Bold');
+
+  

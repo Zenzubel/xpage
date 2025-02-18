@@ -1,4 +1,7 @@
-$default-font-family: 'Stolzl', sans-serif;
+// Fonts
+$default-font: 'Commissioner', sans-serif; //400 700
+$second-font: 'DrukWideCyr', sans-serif; //700
+
 
 $default-transition-duration: 0.35s;
 $fast-transition-duration: 0.2s;
@@ -15,15 +18,17 @@ $xs: 568px;
 $xxs-2: 375px;
 $xxs: 320px;
 
-$c-yellow: #fade45;
-$c-yellow-hover: #f8da34;
-$c-yellow-click: #e9d046;
-$c-yellow-disabled: rgba(#fade4566, 0.4);
-$c-grey-dark: #686b6f;
-$c-grey-body: #f4f2f2;
-$c-black-body: #1d2227;
-$c-black-bg: #0d0e0e;
-$c-title: #212121;
-$c-text-dark: #23231f;
-$c-text-light: #edeff1;
-$c-text-light-2: #eee9e9;
+
+
+$c-body-bg: #ececec;
+$c-gray-1: #efefef;
+$c-gray-2: #747474;
+$c-text-black: #202020;
+$c-black: #202020;
+$c-text-white: #fff;
+$c-white: #fff;
+$c-white-rgba-20: rgba(255,255,255, 0.2);
+$c-text-green: #2E8D43;
+$c-green: #2E8D43;
+$c-text-orange: #F36722;
+$c-orange: #F36722;

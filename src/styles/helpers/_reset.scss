@@ -20,7 +20,7 @@ body {
 	min-width: 320px;
 	font: normal 14px/1.4 Arial, sans-serif;
 	color: #000;
-	background: #fff;
+	background: $c-body-bg;
 	@include mobile {
 		-webkit-text-size-adjust: 100%;
 	}
@@ -107,7 +107,7 @@ a[href^='tel'] {
 	text-decoration: none;
 	@include desktop() {
 		&:hover {
-			color: $c-yellow-hover;
+			// color: $c-yellow-hover;
 		}
 	}
 }
