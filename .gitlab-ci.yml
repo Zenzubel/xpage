@@ -1,0 +1,34 @@
+image: node:16.18.1
+
+cache:
+  paths:
+    - node_modules/
+
+stages:          # List of stages for jobs, and their order of execution
+  - build
+  - deploy
+
+build-job:
+  stage: build
+  script:
+    - yarn
+    - yarn run build
+
+deploy-job:
+  stage: deploy
+  script:
+    - echo "Deploying application..."
+    - echo "Application successfully deployed."
+
+pages:
+  stage: deploy
+  script:
+    - CI=false yarn run build
+    - rm -rf public
+    - cp dist/index.html dist/404.html
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

@@ -1,0 +1,31 @@
+.link-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 124, 0.10);
+  @media (hover) {
+    &:hover {
+      .link-block__icon {
+        //color: $white;
+      }
+    }
+  }
+  &__text {
+    max-width: 816px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  &__icon {
+    width: 18px;
+    height: 18px;
+    transition: color 0.25s ease-in-out;
+  }
+  + .link-block {
+    margin-top: 20px;
+  }
+}

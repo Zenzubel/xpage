@@ -1,0 +1,5 @@
+mixin link-block(text)
+    a.link-block(href="#")
+        span.link-block__text= text
+        svg.link-block__icon
+            use(xlink:href="img/svg/sprite.svg#back-right")

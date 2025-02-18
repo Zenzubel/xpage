@@ -1,0 +1,15 @@
+@mixin desktop {
+  @at-root html._desktop #{&} {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @at-root html._mobile #{&} {
+    @content;
+  }
+}
+
+@mixin box {
+  box-sizing: border-box;
+}
