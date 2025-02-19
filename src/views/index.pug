@@ -1,6 +1,7 @@
 extends ../components/layouts/default
 include ../components/ui-kit/logo/logo
 include ../components/ui-kit/navigate/navigate
+include ../components/ui-kit/picture/picture
 
 block variables
 	- const title = "xpage"
@@ -9,9 +10,9 @@ block variables
 
 
 block content
-	//- include ../components/blocks/content/content
-	//- .sd ssd
+	include ../components/blocks/hero/hero
 
 block scripts
 	//- script(src="js/vendor.js")
 	script(src="js/main.js")
+	script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")

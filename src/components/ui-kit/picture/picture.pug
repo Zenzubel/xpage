@@ -1,0 +1,5 @@
+mixin picture(sourceMobile, source, imgSrc, media, alt, type, classMod)
+	picture.picture(class=classMod? `picture--${classMod}` : "")
+		source(media=`(max-width: ${media}px)`, srcset=sourceMobile, type=`image/${type}`)
+		source(srcset=source, type=`image/${type}`)
+		img(srcset=imgSrc alt=alt)
