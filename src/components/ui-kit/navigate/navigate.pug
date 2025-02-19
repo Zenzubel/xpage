@@ -1,0 +1,6 @@
+mixin navigate(array, classMod)
+	nav.nav(class=classMod? `nav--${classMod}` : "")
+		ul.nav__list
+			each item in array
+				li.nav__list-item
+					a.nav__list-link(href=item.link, class=item.isActive? "active" : "")=item.text

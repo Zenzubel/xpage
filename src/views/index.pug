@@ -1,10 +1,16 @@
 extends ../components/layouts/default
+include ../components/ui-kit/logo/logo
+include ../components/ui-kit/navigate/navigate
 
 block variables
 	- const title = "xpage"
+	//- block variables
+	- var headerNavItems = [{text: 'играть', link: 'somepage.html', isActive: true},{text: 'смотреть', link: 'somepage.html', isActive: false},{text: 'учиться', link: 'somepage.html', isActive: false},{text: 'мероприятия', link: 'somepage.html', isActive: false}]
+
 
 block content
-	include ../components/blocks/content/content
+	//- include ../components/blocks/content/content
+	//- .sd ssd
 
 block scripts
 	//- script(src="js/vendor.js")

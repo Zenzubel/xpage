@@ -1,0 +1,30 @@
+.logo {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 9.9rem;
+
+	@media (max-width: $breakpoint-md) {
+		max-width: 99px;
+	};
+
+	@media (max-width: $breakpoint-md) {
+		max-width: 70px;
+	};
+
+	svg {
+		max-width: 9.9rem;
+		max-height: 2.8rem;
+		object-fit: cover;
+
+		@media (max-width: $breakpoint-md) {
+			max-width: 99px;
+			max-height: 258px;
+		};
+	
+		@media (max-width: $breakpoint-md) {
+			max-width: 70px;
+			max-height: 18px;
+		};
+	}
+}

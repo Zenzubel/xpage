@@ -1,0 +1,43 @@
+.nav {
+
+	&--hide-sm {
+
+		@media (max-width: $breakpoint-sm) {
+			display: none;
+		};
+	}
+
+	&__list {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		gap: 2.4rem;
+
+		@media (max-width: $breakpoint-md) {
+			gap: 24px;
+		};
+
+		&-item {
+			transition-duration: $default-transition-duration;
+			transform: translateY(0);
+
+			@media (any-hover: hover) {
+				&:hover {
+					transform: translateY(-3px);
+				}
+			};
+		}
+		
+		&-link {
+			text-transform: uppercase;
+			padding: 1.5rem 0;
+			font-family: $second-font;
+			font-weight: 700;
+			font-size: 1.4rem;
+
+			@media (max-width: $breakpoint-md) {
+				padding: 15px 0;
+			};
+		}
+	}
+}

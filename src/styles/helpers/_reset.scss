@@ -20,7 +20,7 @@ body {
 	min-width: 320px;
 	font: normal 14px/1.4 Arial, sans-serif;
 	color: #000;
-	background: $c-body-bg;
+	background: #fff;
 	@include mobile {
 		-webkit-text-size-adjust: 100%;
 	}
@@ -41,6 +41,7 @@ li {
 }
 
 img {
+	font-size: 0;
 	vertical-align: top;
 }
 

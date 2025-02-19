@@ -1,1 +1,19 @@
-header.header dfdfd
+
+header.header
+	.header__wrapper
+		.container
+			.header__inner
+				.header__navigate
+					.header__logo-box
+						+logo('index.html', 'logo', '')
+					+navigate(headerNavItems, 'hide-sm')
+				.header__menu
+					button.header__menu-button.text-uppercase
+						svg
+							use(xlink:href='svg/sprite.svg#burger')
+						span Меню
+				.header__user
+					button.header__user-button
+						.header__user-name.text-uppercase геннадий П.
+						.header__user-avatar
+							img(src="../../img/header/user.jpg", alt="Изображение пользователя")

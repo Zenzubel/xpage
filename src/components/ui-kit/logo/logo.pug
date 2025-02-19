@@ -1,0 +1,4 @@
+mixin logo(href, svgName, className)
+	a.logo(href=href, class=className?className:"")
+		svg
+			use(xlink:href=`svg/sprite.svg#${svgName}`)
