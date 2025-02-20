@@ -4,10 +4,13 @@ section.section.section--hero
 			.hero
 				.hero__swiper.swiper(data-slider-fade)
 					.hero__swiper-wrapper.swiper-wrapper
-						.hero__swiper-slide.swiper-slide
-							+picture('../../img/hero/1-mobile.webp', '../../img/hero/1.webp', '../../img/hero/1.jpg', 568, 'Игра в баскетбол', 'webp', '')
-						.hero__swiper-slide.swiper-slide
-							+picture('../../img/hero/2-mobile.webp', '../../img/hero/2.webp', '../../img/hero/2.jpg', 568, 'Игра в баскетбол', 'webp', '')
-						.hero__swiper-slide.swiper-slide
-							+picture('../../img/hero/3-mobile.webp', '../../img/hero/3.webp', '../../img/hero/3.jpg', 568, 'Игра в баскетбол', 'webp', '')
+						.hero__swiper-slide.swiper-slide(data-pagination-text="играй")
+							+picture('../../img/hero/1-mobile.webp', '../../img/hero/1.webp', '../../img/hero/1.jpg', 768, 'Игра в баскетбол', 'webp', '')
+							h1.hero__title.text-uppercase Найди с&nbsp;кем поиграть в&nbsp;баскет
+						.hero__swiper-slide.swiper-slide(data-pagination-text="учись")
+							+picture('../../img/hero/2-mobile.webp', '../../img/hero/2.webp', '../../img/hero/2.jpg', 768, 'Игра в баскетбол', 'webp', '')
+							h1.hero__title.text-uppercase Учись играть в&nbsp;баскет
+						.hero__swiper-slide.swiper-slide(data-pagination-text="смотри")
+							+picture('../../img/hero/3-mobile.webp', '../../img/hero/3.webp', '../../img/hero/3.jpg', 768, 'Игра в баскетбол', 'webp', '')
+							h1.hero__title.text-uppercase Смотри как играют в&nbsp;баскет
 					.swiper-pagination

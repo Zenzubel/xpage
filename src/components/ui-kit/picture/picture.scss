@@ -5,9 +5,8 @@
 		max-width: 100%;
 		object-fit: cover;
 
-		@media (max-width: $breakpoint-xs) {
+		@media (max-width: $breakpoint-sm) {
 			width: 100%;
-			
 		};
 	}
 }

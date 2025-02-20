@@ -1,9 +1,10 @@
 // Fonts
-$default-font: 'Commissioner', sans-serif; //400 700
-$second-font: 'DrukWideCyr', sans-serif; //700
+$default-font: 'DrukWideCyr', sans-serif; //700
+$second-font: 'Commissioner', sans-serif; //400 700
 
 $default-transition-duration: 0.35s;
 $fast-transition-duration: 0.2s;
+$long-transition-duration: 0.6s;
 $default-transition-function: ease-out;
 
 //media
@@ -15,6 +16,7 @@ $breakpoint-lg: 1280px;
 $breakpoint-md: 1024px;
 $breakpoint-sm: 768px;
 $breakpoint-xs: 568px;
+$breakpoint-xxs-1: 430px;
 $breakpoint-xxs-2: 375px;
 $breakpoint-xxs-3: 360px;
 $breakpoint-xxs: 320px;
