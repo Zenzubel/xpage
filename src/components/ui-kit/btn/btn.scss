@@ -1,0 +1,48 @@
+.btn {
+	text-transform: uppercase;
+	height: 6.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	padding: 0 2.4rem;
+
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: $c-text-white;
+	background-color: $c-orange;
+	border-radius: $border-radius;	
+	transform: scale(1);
+	transition-duration: $default-transition-duration;
+
+	@media (max-width: $breakpoint-md) {
+		height: 64px;
+		gap: 20px;
+		padding: 0 24px;
+		font-size: 16px;
+		border-radius: $border-radius-md;
+	};
+
+	@media (max-width: $breakpoint-md) {
+		border-radius: $border-radius-sm;
+	};
+
+	@media (max-width: $breakpoint-xs) {
+		height: 44px;
+		padding: 0 20px;
+	};
+
+	svg {
+		width: 2.4rem;
+		min-width: 2.4rem;
+		height: 2.4rem;
+		min-height: 2.4rem;
+		
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			transform: scale(1.01);
+		}
+	};
+}

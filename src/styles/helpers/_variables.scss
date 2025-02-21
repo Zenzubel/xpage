@@ -33,6 +33,27 @@ $section-padding: 3rem 0;
 $section-padding-md: 30px 0;
 $section-padding-sm: 20px 0;
 
+/* Typography */
+// h1
+$h1-font: $default-font;
+$h1-font-size: 8rem;
+$h1-font-size-md: 80px;
+$h1-font-size-sm: 60px;
+$h1-font-size-xs: 26px;
+$h1-font-weight: 700;
+$h1-line-height: 1.2;
+$h1-color: currentColor;
+
+// h2
+$h2-font: $default-font;
+$h2-font-size: 8rem;
+$h2-font-size-md: 80px;
+$h2-font-size-sm: 60px;
+$h2-font-size-xs: 26px;
+$h2-font-weight: 700;
+$h2-line-height: 1.2;
+$h2-color: currentColor;
+
 //colors
 $c-body-bg: #ececec;
 $c-gray-1: #efefef;

@@ -1,0 +1,12 @@
+mixin play-card(cards)
+	each item in cards
+		article.play-card(class=item.modClass? `play-card--${item.modClass}` : "")
+			.play-card__content
+				.play-card__container
+					.play-card__picture
+						+picture(item.srcsetXs, item.srcsetHd, item.imgSrc, item.media, item.alt, item.type, item.picClassMode)
+					.play-card__about
+						.play-card__head=item.cardTitle
+						p.play-card__text=item.cardText
+				.play-card__button
+					+btn(item.href, item.btnText, item.btnMode)

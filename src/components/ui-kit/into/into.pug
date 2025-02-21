@@ -1,0 +1,5 @@
+mixin into(into, color, link)
+	a.into(href=link, class=color? `into--${color}` : "")
+		span=into
+		svg
+			use(xlink:href="svg/sprite.svg#arrow-right2")

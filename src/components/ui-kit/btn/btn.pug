@@ -1,0 +1,4 @@
+mixin btn(link, text, classMod)
+	a.btn(href=link, class=classMod? `btn--${classMod}` : "")=text
+		svg
+			use(xlink:href="svg/sprite.svg#arrow-right2")

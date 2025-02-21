@@ -1,0 +1,13 @@
+.play-card {
+
+	&__head {
+		font-size: 3.2rem;
+		line-height: 4.16rem / 3.2rem * 100%;
+	}
+
+	&__text {
+		font-family: $second-font;
+		font-size: 1.6rem;
+		line-height: 2.56rem / 1.6rem * 100%;
+	}
+}

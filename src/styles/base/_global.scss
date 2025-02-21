@@ -1,96 +1,83 @@
-	html {
-		font-size: 62.5%;
+.wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: $container-max-width;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 $container-padding;
+
+	@media (max-width: $breakpoint-md) {
+		padding: 0 $container-padding-md;
 	}
 
-	body {
-		font-family: $default-font, sans-serif;
-		color: $c-text-black;
-		background: $c-body-bg;
-		&.lock {
-			overflow: hidden;
-		}
+	@media (max-width: $breakpoint-sm) {
+		padding: 0 $container-padding-sm;
 	}
+}
 
-	.wrapper {
-		position: relative;
-		width: 100%;
-		min-height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
 
-	.content {
-		flex: 1 0 auto;
-	}
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
 
-	.footer {
-		flex: 0 0 auto;
+.animated {
+	@extend .transition-active;
+	&:hover {
+		@extend .transition-hover;
 	}
-	
-	.container {
-		max-width: $container-max-width;
-		width: 100%;
-		min-width: 320px;
-		margin: 0 auto;
-		padding: 0 $container-padding;
+}
 
-		@media (max-width: $breakpoint-md) {
-			padding: 0 $container-padding-md;
-		}
-	
-		@media (max-width: $breakpoint-sm) {
-			padding: 0 $container-padding-sm;
-		}
-	}
-	
+.transition-active {
+	transition: color $fast-transition-duration $default-transition-function,
+	background $default-transition-duration $default-transition-function,
+	box-shadow $default-transition-duration $default-transition-function,
+	border-color $default-transition-duration $default-transition-function,
+	transform $default-transition-duration $default-transition-function;
+}
 
-	.visually-hidden {
-		position: absolute;
-		clip: rect(0 0 0 0);
-		width: 1px;
-		height: 1px;
-		margin: -1px;
-		overflow: hidden;
-	}
+.transition-hover {
+	transition: none;
+}
 
-	.animated {
-		@extend .transition-active;
-		&:hover {
-			@extend .transition-hover;
-		}
-	}
+button {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	overflow: visible;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	line-height: normal;
+	-webkit-appearance: none;
+	outline: none;
+}
 
-	.transition-active {
-		transition: color $fast-transition-duration $default-transition-function,
-		background $default-transition-duration $default-transition-function,
-		box-shadow $default-transition-duration $default-transition-function,
-		border-color $default-transition-duration $default-transition-function,
-		transform $default-transition-duration $default-transition-function;
-	}
-
-	.transition-hover {
-		transition: none;
-	}
-
-	button {
-		border: none;
-		margin: 0;
-		padding: 0;
-		width: auto;
-		overflow: visible;
-		background: transparent;
-		color: inherit;
-		font: inherit;
-		cursor: pointer;
-		line-height: normal;
-		-webkit-appearance: none;
-		outline: none;
-	}
-
-	.text-uppercase {
-		text-transform: uppercase;
-	}
+.text-uppercase {
+	text-transform: uppercase;
+}
 
 //start swirep prop
 .swiper {
