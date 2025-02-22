@@ -20,4 +20,25 @@
 			padding: 8px 0 21px;
 		}
 	}
+
+	&__wrapper {
+
+		&--gap {
+			display: flex;
+			flex-direction: column;
+			gap: 6.4rem;
+
+			@media (max-width:$breakpoint-md) {
+				gap: 64px;
+			};
+
+			@media (max-width: $breakpoint-sm) {
+				gap: 40px;
+			};
+
+			@media (max-width:$breakpoint-xs) {
+				gap: 21px;
+			};
+		}
+	}
 }

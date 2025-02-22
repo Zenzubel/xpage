@@ -21,9 +21,6 @@ body {
 	font: normal 14px/1.4 Arial, sans-serif;
 	color: #000;
 	background: #fff;
-	@include mobile {
-		-webkit-text-size-adjust: 100%;
-	}
 }
 
 img,
@@ -48,7 +45,6 @@ img {
 a {
 	color: inherit;
 	text-decoration: none;
-	@extend .transition-active;
 }
 
 table {
@@ -60,11 +56,6 @@ table {
 	}
 }
 
-input,
-select,
-textarea {
-	@include box;
-}
 
 input[type='number']::-webkit-inner-spin-button {
 	-webkit-appearance: none;
@@ -106,11 +97,6 @@ input[type='search'] {
 a[href^='tel'] {
 	color: inherit;
 	text-decoration: none;
-	@include desktop() {
-		&:hover {
-			// color: $c-yellow-hover;
-		}
-	}
 }
 
 button {

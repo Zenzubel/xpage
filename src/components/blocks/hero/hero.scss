@@ -14,26 +14,19 @@
 		position: absolute;
 		bottom: 13.2rem;
 		left: var(--gap);
-		max-width: 130rem;
 		font-size: 4.166666vw;
 		line-height: 1.2;
 		color: $c-text-white;
 
-		@media (max-width: $breakpoint-2xl) {
-			max-width: 110rem;
-		};
-
-		@media (max-width: $breakpoint-xl) {
-			max-width: 100rem;
-		};
+		span {
+			display: block;
+		}
 
 		@media (max-width: $breakpoint-lg) {
-			max-width: 85rem;
 			bottom: 11rem;
 		};
 
 		@media (max-width: $breakpoint-md) {
-			max-width: 750px;
 			bottom: 90px;
 		};
 	
@@ -42,11 +35,7 @@
 			font-size: 26px;
 		};
 
-		@media (max-width: $breakpoint-xs) {
-			max-width: 350px;
-		};
-
-		@media (max-width: $breakpoint-xxs-1) {
+		@media (max-width: $breakpoint-xxs-2) {
 			max-width: 273px;
 		};
 	}
@@ -132,6 +121,7 @@
 				align-items: center;
 				padding: 0 2.4rem;
 				background: $c-white;
+				box-shadow: 0 4px 20px 0 $c-shadow;
 
 				font-size: 1.6rem;
 				line-height: 1;

@@ -1,4 +1,5 @@
 .btn {
+	overflow: hidden;
 	text-transform: uppercase;
 	height: 6.4rem;
 	display: flex;
@@ -7,6 +8,7 @@
 	gap: 2rem;
 	padding: 0 2.4rem;
 
+	white-space: nowrap;
 	font-size: 1.6rem;
 	font-weight: 700;
 	color: $c-text-white;
@@ -15,29 +17,57 @@
 	transform: scale(1);
 	transition-duration: $default-transition-duration;
 
-	@media (max-width: $breakpoint-md) {
-		height: 64px;
+	@media (max-width: $breakpoint-lg) {
+		height: 44px;
 		gap: 20px;
-		padding: 0 24px;
-		font-size: 16px;
-		border-radius: $border-radius-md;
-	};
-
-	@media (max-width: $breakpoint-md) {
+		padding: 0 16px;
+		font-size: 1.2rem;
 		border-radius: $border-radius-sm;
 	};
 
-	@media (max-width: $breakpoint-xs) {
-		height: 44px;
-		padding: 0 20px;
+	@media (max-width: $breakpoint-md) {
+		font-size: 12px;
 	};
+
+	@media (max-width: $breakpoint-xs) {
+		height: 40px;
+		padding: 0 14px;
+		font-size: 14px;
+	};
+
+	span {
+		overflow: hidden;
+		max-width: 220px;
+		overflow: hidden;
+
+		@media (max-width: $breakpoint-sm) {
+			max-width: 180px;
+		};
+
+		@media (max-width:$breakpoint-xxs-3) {
+			max-width: 160px;
+		};
+	}
 
 	svg {
 		width: 2.4rem;
 		min-width: 2.4rem;
 		height: 2.4rem;
 		min-height: 2.4rem;
+
+		@media (max-width:$breakpoint-lg) {
+			width: 2rem;
+			min-width: 2rem;
+			height: 2rem;
+			min-height: 2rem;
+		};
 		
+		@media (max-width:$breakpoint-md) {
+			width: 16px;
+			min-width: 16px;
+			height: 16px;
+			min-height: 16px;
+		};
 	}
 
 	@media (any-hover: hover) {

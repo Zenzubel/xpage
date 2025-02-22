@@ -46,6 +46,14 @@ h2,
   line-height: $h2-line-height;
   color: $h2-color;
 
+  @media (max-width: $breakpoint-2xl) {
+    font-size: $h2-font-size-2xl;
+  }
+
+  @media (max-width: $breakpoint-xl) {
+    font-size: $h2-font-size-xl;
+  }
+
   @media (max-width: $breakpoint-md) {
     font-size: $h2-font-size-md;
   }
