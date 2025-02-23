@@ -41,4 +41,24 @@
 			};
 		}
 	}
+
+	&__content {
+
+		&--gap {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+
+			@media (max-width:$breakpoint-md) {
+				gap: 20px;
+			};
+
+			@media (max-width: $breakpoint-sm) {
+				gap: 8px;
+			};
+			@media (max-width:$breakpoint-xs) {
+				gap: 21px;
+			};
+		}
+	}
 }

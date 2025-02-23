@@ -1,0 +1,9 @@
+mixin tag(array, colorMode, useMode)
+	.tag(class=colorMode? `tag--${colorMode}`:'')(class=useMode? `tag--${useMode}`:'')(data-tags='')
+		each item in array
+			if item.isLink
+				span.tag__item(class=item.isActive? 'active': '')(data-tag='')
+					a.tag__name(href=item.link)= item.name
+			else 
+				span.tag__item(data-tag='')
+					span.tag__name= item.name

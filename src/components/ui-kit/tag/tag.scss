@@ -1,0 +1,110 @@
+.tag {
+	--height: 3.3rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+
+	@media (max-width:$breakpoint-md) {
+		--height: 33px;
+		gap: 4px;
+	};
+
+	@media (max-width: $breakpoint-sm) {
+		--height: 26px;
+	};
+
+	&--green {
+		.tag {
+			&__name {
+				color: $c-text-green;
+				background-color: $c-white;
+			}
+		}
+	}
+	&--gray {
+		.tag {
+			&__name {
+				background-color: $c-gray-1;
+			}
+		}
+	}
+
+	&--row {
+
+		&.tag {
+			&--green {
+				.tag {
+					&__name {
+						color: $c-text-white;
+						background-color: $c-white-rgba-20;
+					}
+
+					&__item {
+						&.active {
+							.tag {
+								&__name {
+									color: $c-text-green;
+									background-color: $c-white;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		&.tag {
+			&--gray {
+				.tag {
+					&__name {
+						background-color: $c-gray-1;
+					}
+		
+					&__item {
+						&.active {
+							.tag {
+								&__name {
+									color: $c-text-white;
+									background-color: $c-text-black;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__name {
+		height: var(--height);
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 0 1.2rem;
+		white-space: nowrap;
+		text-align: center;
+		border-radius: 3.9rem;
+
+		font-size: 1.2rem;
+		line-height: var(--height);
+		font-weight: 700;
+		background-color: $c-gray-1;
+		background-color: red;
+
+		&.active {
+
+		}
+
+		@media (max-width:$breakpoint-md) {
+			height: 33px;
+			padding: 0 12px;
+			border-radius: 39px;
+			font-size: 12px;
+		};
+
+		@media (max-width: $breakpoint-sm) {
+			height: 26px;
+			border-radius: 20px;
+			font-size: 10px;
+		};
+	}
+}
