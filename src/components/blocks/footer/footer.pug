@@ -1,1 +1,27 @@
 footer.footer
+	.footer__wrapper
+		.container
+			.footer__container
+				.footer__inner.footer__inner--aside
+					.footer__content
+						h3.h3.footer__head Еще больше полезных материалов и видеоуроков в нашем приложении
+						.footer__icons
+							.footer__icon
+								svg
+									use(xlink:href=`svg/sprite.svg#apple-t-icon`)
+							.footer__icon
+								svg
+									use(xlink:href=`svg/sprite.svg#google-t-play-icon`)
+					.footer__right.footer__right--md-hide
+						.footer__label
+							.footer__label-qr
+								svg
+									use(xlink:href=`svg/sprite.svg#qr-code`)
+							.footer__label-sistem iOS / Android
+							.footer__label-text Наведите камеру устройства на QR-код, чтобы скачать
+
+				.footer__copyright
+					span.footer__copiright-text сделано в
+					a(href="#").footer__copiright-link xpage
+	.footer__bg
+		+picture('../../img/footer/basketball_xs@2x.png', '../../img/footer/basketball_hd.png', '../../img/footer/basketball_hd.png', 768, 'Баскетбольный мяч', 'png', '')

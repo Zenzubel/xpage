@@ -131,6 +131,11 @@
 		padding-left: 1.6rem;
 		border-left: 1px solid $c-gray-3;
 
+		@media (max-width:$breakpoint-md) {
+			margin-left: 0;
+			padding-left: 0;
+		};
+
 		&-block {
 			height: var(--footHeight);
 			height: 100%;
@@ -158,11 +163,8 @@
 				padding-top: 2rem;
 			}
 		}
-		
-		
 
 		&-block + &-block {
-			
 			border-top: 1px solid $c-gray-3;
 		}
 	}
