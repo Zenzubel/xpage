@@ -61,4 +61,22 @@
 			};
 		}
 	}
+
+	&__body {
+
+		&--aside {
+			display: flex;
+
+			.section {
+
+				&__content {
+					flex: 0 1 100%;
+				}
+
+				&__right {
+					flex: 1 0 68.3rem;
+				}
+			}
+		}
+	}
 }

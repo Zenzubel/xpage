@@ -88,11 +88,6 @@
 		line-height: var(--height);
 		font-weight: 700;
 		background-color: $c-gray-1;
-		background-color: red;
-
-		&.active {
-
-		}
 
 		@media (max-width:$breakpoint-md) {
 			height: 33px;

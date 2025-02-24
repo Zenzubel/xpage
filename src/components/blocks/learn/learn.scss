@@ -1,5 +1,7 @@
 .learn {
 
+	--footHeight: 29.4rem;
+
 	&__center, 
 	&__choice {
 		overflow: hidden;
@@ -28,7 +30,7 @@
 	}
 
 	&__head {
-		max-width: 75rem;
+		max-width: 76rem;
 
 		&.h3 {
 			color: $c-text-white;
@@ -45,6 +47,7 @@
 
 	&__center {
 		position: relative;
+		height: 61.1rem;
 
 		&-content {
 			position: absolute;
@@ -62,16 +65,34 @@
 		&-tags {
 			margin-top: auto;
 		}
+
+		&-image {
+			height: 100%;
+
+			.picture {
+				source, 
+				img {
+					position: absolute;
+					max-width: none;
+					width: 100%;
+					inset: 0;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
 	}
 
 	&__choice {
+		height: 29.4rem;
 		display: flex;
 		flex-direction: column;
-		gap: 6.2rem;
+		justify-content: space-between;
+		gap: 2rem;
 		background-color: $c-green;
 
 		@media (max-width:$breakpoint-md) {
-			gap: 62px;
+			gap: 20px;
 		};
 
 		@media (max-width: $breakpoint-xs) {
@@ -82,4 +103,48 @@
 			max-width: 55rem;
 		}
 	}
+
+	&__parts {
+		display: block;
+		height: 100%;
+		margin-left: 1.6rem;
+		padding-left: 1.6rem;
+		border-left: 1px solid $c-gray-3;
+
+		&-block {
+			height: var(--footHeight);
+			height: 100%;
+		}
+
+		&-container {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 1px;
+
+			> :nth-child(1), 
+			> :nth-child(2) {
+				padding-bottom: 2rem;
+			}
+
+			> :nth-child(2) {
+				padding-top: 1.5rem;
+			}
+
+			> :nth-child(3) {
+				height: calc(10px + var(--footHeight));
+				min-height: calc(10px + var(--footHeight));
+				padding-top: 2rem;
+			}
+		}
+		
+		
+
+		&-block + &-block {
+			
+			border-top: 1px solid $c-gray-3;
+		}
+	}
+
 }

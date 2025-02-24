@@ -70,10 +70,23 @@ $h3-font-weight: 700;
 $h3-line-height: 1.2;
 $h3-color: currentColor;
 
+// h3
+$h6-font: $default-font;
+$h6-font-size: 2rem;
+$h6-font-size-2xl: 2rem;
+$h6-font-size-xl: 2rem;
+$h6-font-size-md: 20px;
+$h6-font-size-sm: 18px;
+$h6-font-size-xs: 18px;
+$h6-font-weight: 700;
+$h6-line-height: 1.2;
+$h6-color: currentColor;
+
 //colors
 $c-body-bg: #ececec;
 $c-gray-1: #efefef;
 $c-gray-2: #747474;
+$c-gray-3: #C4C4C4;
 $c-text-black: #202020;
 $c-black: #202020;
 $c-text-white: #fff;

@@ -7,13 +7,20 @@ include ../components/ui-kit/into/into
 include ../components/ui-kit/play-card/play-card
 include ../components/ui-kit/btn/btn
 include ../components/ui-kit/tag/tag
+include ../components/ui-kit/materials/materials
 
 block variables
 	- const title = "xpage"
 	- let headerNavItems = [{text: 'играть', link: 'somepage.html', isActive: true},{text: 'смотреть', link: 'somepage.html', isActive: false},{text: 'учиться', link: 'somepage.html', isActive: false},{text: 'мероприятия', link: 'somepage.html', isActive: false}]
 	- let cards = [{imgSrc: '../../img/play/play-1-hd.png',	srcsetHd: '../../img/play/play-1-hd.png', srcsetXs: '../../img/play/play-1-xs.png', media: 568, type: 'png', picClassMode: '', alt: 'Игра в баскетбол', modClass: '', cardTitle: 'Найди себе команду', cardText: 'Игры на районе - это возможность найти с кем поиграть в баскетбол в выходные, или создать свою игру и пригласить других игроков присоединиться.', href: 'page.html', btnText: 'текст кнопки', btnMode: ''},{imgSrc: '../../img/play/play-2-hd.png', srcsetHd: '../../img/play/play-2-hd.png', srcsetXs: '../../img/play/play-2-xs.png', media: 568, type: 'png', picClassMode: '', alt: 'Баскетбольный мяч', modClass: '', cardTitle: 'Создавай команды', cardText: 'Игры на районе - это возможность найти с кем поиграть в баскетбол в выходные, или создать свою игру и пригласить других игроков присоединиться.', href: 'page.html', btnText: 'текст кнопки', btnMode: ''},{imgSrc: '../../img/play/play-3-hd.png',	srcsetHd: '../../img/play/play-3-hd.png', srcsetXs: '../../img/play/play-3-xs.png', media: 568, type: 'png', picClassMode: '', alt: 'Игра в баскетбол', modClass: '', cardTitle: 'Участвуй в турнирах', cardText: 'Участвуйте в турнирах вместе с вашей командой. Будьте активными, побеждайте и получайте ачивки и призы от наших спонсоров.', href: 'page.html', btnText: 'текст кнопки', btnMode: ''}]
-	- let tagLink= [{isLink: true ,name: 'детская тренировка', link: 'somePath', isActive: false}, {isLink: true ,name: 'для начинающих', link: 'somePath', isActive: false},{isLink: true ,name: 'стритбол', link: 'somePath', isActive: false},{isLink: true ,name: 'выезд тренера на дом', link: 'somePath', isActive: false},{isLink: true ,name: '12 фильтров', link: 'somePath', isActive: true}]
-	- let tagInfo= [{name: '12 секций по всему городу'}]
+	- let tagLink = [{isLink: true, name: 'детская тренировка', link: 'somePath', isActive: false}, {isLink: true, name: 'для начинающих', link: 'somePath', isActive: false},{isLink: true, name: 'стритбол', link: 'somePath', isActive: false},{isLink: true, name: 'выезд тренера на дом', link: 'somePath', isActive: false},{isLink: true, name: '12 фильтров', link: 'somePath', isActive: true}]
+	- let tagInfo = [{name: '12 секций по всему городу'}]
+	- let vodeLessons = [{vodeLessons: true, title: 'Видеоуроки', headLine: 'Евгений Воронов: «Бронзовые медали - оценка труда нашей команды»', imgSrc: '../../img/learn/poster.jpg', srcsetHd: '../../img/learn/poster.jpg', type: 'webp', alt: 'Игра в баскетбол'}]
+	- let vodeLessonsTags = [{isLink: false, name: '26 октября'}]
+	- let papers = [{papers: true, title: 'статьи', headLine: 'Евгений Воронов: «Бронзовые медали - оценка труда нашей команды»'}]
+	- let papersTags = [{isLink: false, name: '26 октября'}]
+	- let terms = [{terms: true, title: 'термины'}]
+	- let termsTags = [{isLink: true, name: 'треха', link: '#', isActive: false}, {isLink: true, name: 'трехочковый бросок', link: '#', isActive: false}, {isLink: true, name: '36 терминов', link: '#', isActive: true}]
 
 
 block content

@@ -1,0 +1,33 @@
+mixin materials (arrayText, arrayTags)
+	article.materials
+		.materials__content
+			each item in arrayText
+				if item.vodeLessons
+					h6.materials__heading
+						a(href='#').materials__head-link= item.title
+							svg
+								use(xlink:href=`svg/sprite.svg#arrow-right2`)
+					.materials__about.materials__about--flex
+						.materials__picture
+							+picture('', item.imgSrc, item.srcsetHd, '', item.alt, item.type, '')
+						.materials__info-block.materials__info-block--grid
+							a(href='#').materials__headline= item.headLine
+							.materials__tags
+								+tag(arrayTags, 'gray', '')
+				if item.papers
+					h6.materials__heading
+						a(href='#').materials__head-link= item.title
+							svg
+								use(xlink:href=`svg/sprite.svg#arrow-right2`)
+					.materials__about
+						a(href='#').materials__headline= item.headLine
+						.materials__tags
+							+tag(arrayTags, 'gray', '')
+				if item.terms
+					h6.materials__heading
+						a(href='#').materials__head-link= item.title
+							svg
+								use(xlink:href=`svg/sprite.svg#arrow-right2`)
+					.materials__about
+						.materials__tags
+							+tag(arrayTags, 'gray', 'row')

@@ -3,7 +3,7 @@ section.section.learn
 		.section__wrapper.section__wrapper--gap
 			.section__head
 				+head-page('Учись', 'в раздел', 'green', "somepage.html")
-			.section__body
+			.section__body.section__body--aside
 				.section__content.section__content--gap
 					.learn__center
 						.learn__center-image
@@ -18,3 +18,11 @@ section.section.learn
 							+tag(tagLink, 'green', 'row')
 				.section__right
 					.learn__parts
+						.learn__parts-container
+							.learn__parts-block
+								+materials(vodeLessons, vodeLessonsTags)
+							.learn__parts-block
+								+materials(papers, papersTags)
+							.learn__parts-block
+								+materials(terms, termsTags)
+
