@@ -2,6 +2,14 @@
 
 	--footHeight: 29.4rem;
 
+	@media (max-width: $breakpoint-lg) {
+		--footHeight: 33.4rem;
+	};
+
+	@media (max-width:$breakpoint-md) {
+		--footHeight: 400px;
+	};
+
 	&__center, 
 	&__choice {
 		overflow: hidden;
@@ -49,6 +57,14 @@
 		position: relative;
 		height: 61.1rem;
 
+		@media (max-width: $breakpoint-2xl) {
+			height: 55rem;
+		};
+
+		@media (max-width:$breakpoint-md) {
+			height: 400px;
+		};
+
 		&-content {
 			position: absolute;
 			top: 0;
@@ -78,13 +94,17 @@
 					inset: 0;
 					height: 100%;
 					object-fit: cover;
+
+					@media (max-width: $breakpoint-sm) {
+						object-position: top;
+					};
 				}
 			}
 		}
 	}
 
 	&__choice {
-		height: 29.4rem;
+		height: var(--footHeight);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;

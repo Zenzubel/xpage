@@ -10,7 +10,7 @@ mixin materials (arrayText, arrayTags)
 					.materials__about.materials__about--flex
 						.materials__picture
 							+picture('', item.imgSrc, item.srcsetHd, '', item.alt, item.type, '')
-						.materials__info-block.materials__info-block--grid
+						.materials__info-block.materials__info-block--col
 							a(href='#').materials__headline= item.headLine
 							.materials__tags
 								+tag(arrayTags, 'gray', '')

@@ -6,5 +6,9 @@
 
 	.into {
 		margin-bottom: 1.4rem;
+
+		@media (max-width:$breakpoint-xl) {
+			margin-bottom: 0;
+		};
 	}
 }
